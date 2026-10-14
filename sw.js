@@ -1,5 +1,5 @@
 // Cache the app, AI runtime and model so it keeps working with weak signal.
-const CACHE = 'flockspotter-v1';
+const CACHE = 'flockspotter-v2';
 const FILES = ['./', 'index.html', 'app.js', 'known.js', 'model.onnx', 'manifest.webmanifest', 'icon.svg',
   'ort/ort.wasm.min.js', 'ort/ort-wasm-simd-threaded.wasm', 'ort/ort-wasm-simd-threaded.mjs'];
 self.addEventListener('install', (e) => e.waitUntil(caches.open(CACHE).then((c) => c.addAll(FILES)).then(() => self.skipWaiting())));

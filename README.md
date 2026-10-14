@@ -21,4 +21,4 @@ Open the GitHub Pages link on your phone, tap Start, and allow camera and locati
 | `ort/` | ONNX Runtime Web (MIT), vendored so the page works offline |
 | `sw.js` | Caches the page so it works with weak signal |
 
-The model was trained from the [Outflock](https://huggingface.co/aseylys/Outflock) dataset plus street-level photos at mapped camera locations. Training photos are not included in this repo.
+The model was trained from the [Outflock](https://huggingface.co/aseylys/Outflock) dataset, hand-checked web photos, and hand-checked street-level photos taken near mapped camera locations, plus look-alikes (streetlights, school-zone solar beacons) as negatives. Training photos are not included in this repo.
